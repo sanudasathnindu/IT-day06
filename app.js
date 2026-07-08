@@ -23,7 +23,22 @@ let customer2 ={
         {
             id: 1,
             name: "item1",
-            price: 100
+            price: 100,
+            variants: [
+                {
+                    id: 1,
+                    name: "variant1",
+                    price: 150
+                },{
+                    id: 2,
+                    name: "variant2",
+                    price: 200
+                },{
+                    id: 3,
+                    name: "variant3",
+                    price: 250
+                }
+            ]
         },{
             id: 2,
             name: "item2",
