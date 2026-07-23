@@ -73,6 +73,10 @@
 
 // DOM Manipulation
 
-document.write("<h2>DOM Manipulation</h2>");
+// document.write("<h2>DOM Manipulation</h2>");
 
 console.log(document.title);
+
+let heading = document.getElementById("heading");
+
+console.log(heading);
