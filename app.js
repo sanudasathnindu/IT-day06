@@ -62,4 +62,9 @@ console.log(customer2.salary);
 console.log(customer2.items);
 console.log(customer2.father);
 console.log(customer2.items[0].name);
-
+console.log(customer2.items[0].variants[1].name);
+console.log(customer2.items[0].variants[1].id);
+console.log(customer2.items[0].variants[1].price);
+console.log(customer2.items[0].variants[2].name);
+console.log(customer2.items[0].variants[2].id);
+console.log(customer2.items[0].variants[2].price);
