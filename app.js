@@ -79,4 +79,6 @@ console.log(document.title);
 
 let heading = document.getElementById("heading");
 
-console.log(heading);
+heading.innerText = "Sanuda";
+
+console.log(heading.innerText);
