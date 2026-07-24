@@ -139,7 +139,7 @@ function btnAddCustomerOnAction() {
     console.log(txtAge);
     console.log(txtEmail);
     console.log(txtSalary);
-}
+
 
 let customer ={
     name: txtName,
@@ -148,3 +148,8 @@ let customer ={
     email: txtEmail,
     salary: txtSalary
 };
+
+customerList.push(customer);
+
+console.log(customerList);
+}
