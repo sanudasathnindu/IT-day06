@@ -126,22 +126,45 @@ let heading = document.getElementById("heading");
 
 let customerList = [];
 
+function btnAddCustomerOnAction(){
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
 
-function btnAddCustomerOnAction() {
-   
-  
+    let customer={
+        name:txtName,
+        address:txtAddress,
+        age:txtAge,
+        email:txtEmail,
+        salary:txtSalary
+    }
+
+    customerList.push(customer);
+    loadTable();
+
+    console.log(customerList);
+      
 }
 
-function loadTable() {
-    let tblCustomer = document.getElementById("tblCustomer");
-    
-    tblCustomer.innerHTML = ` <tr>
-            <th>Name</th>
-            <th>Address</th>
-            <th>Age</th>
-            <th>Email</th>
-            <th>Salary</th>
-        </tr>`;
+function loadTable(){
+    let tblCustomers = document.getElementById("tblCustomers");
 
-        console.log(tblCustomer);
+    let body ="";
+
+    for(let i =0; i<customerList.length; i++){
+            body+=`<tr>
+            <td>${customerList[i].name}</td>
+            <td>${customerList[i].address}</td>
+            <td>${customerList[i].age}</td>
+            <td>${customerList[i].email}</td>
+            <td>${customerList[i].salary}</td>
+        </tr>`;
+    }
+
+    tblCustomers.innerHTML=body;
+
+    console.log(tblCustomers);
+    
 }
