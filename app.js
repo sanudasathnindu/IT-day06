@@ -134,5 +134,14 @@ function btnAddCustomerOnAction() {
 
 function loadTable() {
     let tblCustomer = document.getElementById("tblCustomer");
-    console.log(tblCustomer);
+    
+    tblCustomer.innerHTML = ` <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Salary</th>
+        </tr>`;
+
+        console.log(tblCustomer);
 }
