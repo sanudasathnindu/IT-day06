@@ -89,14 +89,22 @@ let heading = document.getElementById("heading");
 
 // }
 
-let number = 0;
-function increaseValue() {
-    heading.innerText = "Sharada"+(++number);
-    console.log("Clicked");
+// let number = 0;
+// function increaseValue() {
+//     heading.innerText = "Sharada"+(++number);
+//     console.log("Clicked");
 
+// }
+
+// function decreaseValue() {
+//     heading.innerText = "Sharada"+(--number);
+// }
+
+
+function changeHeading() {
+
+    let txtOutput = document.getElementById("input text");
+    console.log(txtOutput.value);
+    let heading = document.getElementById("heading");
+    heading.innerText = txtOutput.value;
 }
-
-function decreaseValue() {
-    heading.innerText = "Sharada"+(--number);
-}
-
