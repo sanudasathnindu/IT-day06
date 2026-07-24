@@ -108,3 +108,17 @@ function changeHeading() {
     let heading = document.getElementById("heading");
     heading.innerText = txtOutput.value;
 }
+
+
+function btnSumOnAction() {
+    let input1 = document.getElementById("txtInput01");
+    let input2 = document.getElementById("txtInput02");
+
+    let sum = parseInt(input1.value) + parseInt(input2.value);
+
+    document.getElementById("heading").innerText = "SUM :"+sum;
+
+    console.log(input1.value);
+    console.log(input2.value);
+    console.log(sum);
+}
