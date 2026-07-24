@@ -26,8 +26,22 @@
 <input type="text" placeholder="email" id="txtEmail">
 <input type="text" placeholder="salary" id="txtSalary">
 
-<input type="button" value="Add customer" onclick="btnAddCustomerOnAction()">   
+<input type="button" value="Add customer" onclick="btnAddCustomerOnAction()"> 
 
+<br>
+
+<table border="1" id="tblCustomer">
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Salary</th>
+        </tr>
+   
+</table>
+
+<input type="button" value="Load Table" onclick="loadTable()">
 
     <script src="app.js"></script>
 </body>
