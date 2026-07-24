@@ -83,8 +83,20 @@ let heading = document.getElementById("heading");
 
 // console.log(heading.innerText);
 
-function changeHeading(){
-    heading.innerText = "Sanuda";
+// function changeHeading(){
+//     heading.innerText = "Sanuda";
+//     console.log("Clicked");
+
+// }
+
+let number = 0;
+function increaseValue() {
+    heading.innerText = "Sharada"+(++number);
     console.log("Clicked");
 
 }
+
+function decreaseValue() {
+    heading.innerText = "Sharada"+(--number);
+}
+
