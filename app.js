@@ -101,24 +101,50 @@ let heading = document.getElementById("heading");
 // }
 
 
-function changeHeading() {
+// function changeHeading() {
 
-    let txtOutput = document.getElementById("input text");
-    console.log(txtOutput.value);
-    let heading = document.getElementById("heading");
-    heading.innerText = txtOutput.value;
+//     let txtOutput = document.getElementById("input text");
+//     console.log(txtOutput.value);
+//     let heading = document.getElementById("heading");
+//     heading.innerText = txtOutput.value;
+// }
+
+
+// function btnSumOnAction() {
+//     let input1 = document.getElementById("txtInput01");
+//     let input2 = document.getElementById("txtInput02");
+
+//     let sum = parseInt(input1.value) + parseInt(input2.value);
+
+//     document.getElementById("heading").innerText = "SUM :"+sum;
+
+//     console.log(input1.value);
+//     console.log(input2.value);
+//     console.log(sum);
+// }
+
+
+let customerList = [];
+
+
+function btnAddCustomerOnAction() {
+    let txtName = document.getElementById("txtName").value;
+    let txtAddress = document.getElementById("txtAddress").value;
+    let txtAge = document.getElementById("txtAge").value;
+    let txtEmail = document.getElementById("txtEmail").value;
+    let txtSalary = document.getElementById("txtSalary").value;
+
+    console.log(txtName);
+    console.log(txtAddress);
+    console.log(txtAge);
+    console.log(txtEmail);
+    console.log(txtSalary);
 }
 
-
-function btnSumOnAction() {
-    let input1 = document.getElementById("txtInput01");
-    let input2 = document.getElementById("txtInput02");
-
-    let sum = parseInt(input1.value) + parseInt(input2.value);
-
-    document.getElementById("heading").innerText = "SUM :"+sum;
-
-    console.log(input1.value);
-    console.log(input2.value);
-    console.log(sum);
-}
+let customer ={
+    name: txtName,
+    address: txtAddress,
+    age: txtAge,
+    email: txtEmail,
+    salary: txtSalary
+};
