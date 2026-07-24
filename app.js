@@ -79,6 +79,12 @@ console.log(document.title);
 
 let heading = document.getElementById("heading");
 
-heading.innerText = "Sanuda";
+// heading.innerText = "Sanuda";
 
-console.log(heading.innerText);
+// console.log(heading.innerText);
+
+function changeHeading(){
+    heading.innerText = "Sanuda";
+    console.log("Clicked");
+
+}
